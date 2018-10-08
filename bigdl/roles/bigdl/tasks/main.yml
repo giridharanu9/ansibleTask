@@ -1,0 +1,9 @@
+---
+# Download Bigdl Repo
+- name: Download Bigdl Repo - 0.6.0
+  get_url: url=https://repo1.maven.org/maven2/com/intel/analytics/bigdl/dist-spark-1.6.2-scala-2.10.5-all/0.6.0/dist-spark-1.6.2-scala-2.10.5-all-0.6.0-dist.zip dest=/etc/dist-spark-1.6.2-scala-2.10.5-all-0.6.0-dist.zip
+  when: "release_version == '0.6.0'"
+
+- name: Download Bigdl Repo - 0.5.0
+  get_url: url=https://repo1.maven.org/maven2/com/intel/analytics/bigdl/dist-spark-1.5.2-scala-2.10.5-all/0.5.0/dist-spark-1.5.2-scala-2.10.5-all-0.5.0-dist.zip
+  when: "release_version == '0.5.0'"
