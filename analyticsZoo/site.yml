@@ -1,0 +1,11 @@
+---
+- hosts: analytics_zoo
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  roles:
+    - analytics_zoo
+
+  environment:
+    AZ_HOME=/usr/lib/analytics_zoo
